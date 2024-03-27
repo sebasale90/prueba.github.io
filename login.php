@@ -20,7 +20,7 @@ if($_POST){
     if($registro["n_usuarios"]>0){
         $_SESSION['usuario']=$registro["usuario"];
         $_SESSION['logueado']=true;
-        header("Location:home.php");
+        header("Location:index.php");
     }else{
         $mensaje="Error: El usuario o contraseña son incorrectos";
     }
